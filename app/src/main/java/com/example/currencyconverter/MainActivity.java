@@ -40,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        this.clearValues();
+
+
+    }
+
+    private void clearValues() {
+        this.mViewHolder.textDolar.setText("");
+        this.mViewHolder.textLibra.setText("");
 
     }
 
