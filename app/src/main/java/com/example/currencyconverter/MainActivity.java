@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 if ("".equals(value)){
                     Toast.makeText(getApplicationContext(),getString( R.string.informe_valor),Toast.LENGTH_LONG).show();
                 } else{
+                    Double euro = Double.valueOf(value);
+                    mViewHolder.textDolar.setText(String.format ("%.2f",(euro*1.12)));
+                    mViewHolder.textLibra.setText(String.format ("%.2f",(euro*0.85)));
 
                 }
             }
